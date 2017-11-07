@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单元素</title>
+</head>
+<body>
+	<form action="javascript:alert('数据进行验证')" method="post">
+	<!-- action数据提交地址		 -->
+	<!-- method:数据提交方式 -->
+	            <!-- gey：提交速度快，但是不安全。
+	            post：提交速度慢，但是安全。 -->
+	            <label for="">用户名*</label>
+	            <input type="text" placeholder="请输入用户名" required maxlength="8" minlength="3"> 
+	            <br>
+	            <!-- type 设置input类型 -->
+	            <label for="">密码*</label>
+	            <input type="password" value="123456" placeholder="请输入密码" required minlength="6" ="">
+	            <br>
+	            <label for="">昵称</label>
+	            <input type="password" value="" placeholder="wwwww" readonly>
+	            <br>
+				<label for="">女生</label><input type="radio" name="sex">
+				<label for="">男生</label><input type="radio" name="sex">
+				<br>
+				<label for="">记住密码</label><input type="radio" name="mima">
+				<label for="">忘记密码</label><input type="radio" name="mima">
+	            <input type="submit" value="登录">
+	</form>
+	
+</body>
+</html>
